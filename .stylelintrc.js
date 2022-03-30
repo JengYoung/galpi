@@ -6,9 +6,12 @@ module.exports = {
       files: ['**/*.vue'],
       customSyntax: 'postcss-html',
       rules: {
-        "prettier/prettier": true
+        "prettier/prettier": true,
       },
     }
-  ]
+  ],
+  rules: {
+    "no-empty-source": null,
+  }
 }
 
