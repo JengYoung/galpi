@@ -1,23 +1,39 @@
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
+  font-family: "Noto Sans KR";
+  font-style: sans-serif;
   font-weight: 400;
+
+  /* NOTE: recognized error by printWidth config */
+
+  /* prettier-ignore */
+  src:
+    url("../assets/typography/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../assets/typography/NotoSansKR-Regular.woff") format("woff"),
+    url("../assets/typography/NotoSansKR-Regular.ttf") format("truetype"),
+    url("../assets/typography/NotoSansKR-Regular.otf") format("opentype"),
+    url("../assets/typography/NotoSansKR-Regular.eot")
+    format("embedded-opentype");
   font-display: fallback;
-  src: url(../assets/typography/NotoSansKR-Regular.woff2) format('woff2'),
-    url(../assets/typography/NotoSansKR-Regular.woff) format('woff'),
-    url(../assets/typography/NotoSansKR-Regular.ttf) format('truetype'),
-    url(../assets/typography/NotoSansKR-Regular.otf) format('opentype'),
-    url(../assets/typography/NotoSansKR-Regular.eot) format('embedded-opentype');
 }
 
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
+  font-family: "Noto Sans KR";
+  font-style: sans-serif;
   font-weight: 700;
-  font-display: fallback;
-  src: url(../assets/typography/NotoSansKR-Regular.woff2) format('woff2'),
-    url(../assets/typography/NotoSansKR-Regular.woff) format('woff'),
-    url(../assets/typography/NotoSansKR-Regular.ttf) format('truetype'),
-    url(../assets/typography/NotoSansKR-Regular.otf) format('opentype'),
-    url(../assets/typography/NotoSansKR-Regular.eot) format('embedded-opentype');
+
+  /* NOTE: recognized error by printWidth config */
+
+  /* prettier-ignore */
+  src:
+    url("../assets/typography/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../assets/typography/NotoSansKR-Regular.woff") format("woff"),
+    url("../assets/typography/NotoSansKR-Regular.ttf") format("truetype"),
+    url("../assets/typography/NotoSansKR-Regular.otf") format("opentype"),
+    url("../assets/typography/NotoSansKR-Regular.eot")
+    format("embedded-opentype");
+}
+
+body {
+  width: 1px;
+  height: 1px;
 }

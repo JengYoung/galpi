@@ -1,2 +1,11 @@
 // app global css in SCSS form
-@import 'typography.scss'
+@import "typography";
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  width: 1px;
+  height: 1px;
+}
