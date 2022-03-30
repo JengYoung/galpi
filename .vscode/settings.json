@@ -4,7 +4,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": [
-    "source.fixAll.eslint"
+    "source.fixAll.eslint",
+    "source.fixAll.stylelint"
   ],
   "eslint.validate": [
     "javascript",
@@ -12,5 +13,6 @@
     "typescript",
     "vue"
   ],
+
   "typescript.tsdk": "node_modules/typescript/lib"
 }
