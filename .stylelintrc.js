@@ -8,6 +8,13 @@ module.exports = {
       rules: {
         "prettier/prettier": true,
       },
+    },
+    {
+      files: ['**/*.scss'],
+      customSyntax: 'postcss-html',
+      rules: {
+        "prettier/prettier": true,
+      },
     }
   ],
   rules: {
