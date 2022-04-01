@@ -13,7 +13,7 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
-    "deploy": "aws s3 sync ./dist s3://galpi-app --profile=Jengyoung"
+    "deploy": "aws s3 sync ./dist/spa/ s3://galpi-app --profile=Jengyoung"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
