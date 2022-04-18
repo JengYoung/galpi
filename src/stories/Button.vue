@@ -1,5 +1,7 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style">
+    {{ label }}
+  </button>
 </template>
 
 <script>
@@ -20,7 +22,7 @@ export default {
     },
     size: {
       type: String,
-      validator: function (value) {
+      validator(value) {
         return ['small', 'medium', 'large'].indexOf(value) !== -1;
       },
     },
@@ -45,8 +47,8 @@ export default {
       })),
       onClick() {
         emit('click');
-      }
-    }
+      },
+    };
   },
 };
 </script>
