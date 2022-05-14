@@ -9,10 +9,3 @@ export default defineComponent({
   name: 'App',
 });
 </script>
-
-<style lang="scss" scoped>
-body {
-  width: 1px;
-  height: 1px;
-}
-</style>

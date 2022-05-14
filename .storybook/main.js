@@ -14,6 +14,14 @@ module.exports = {
     "builder": "@storybook/builder-webpack5"
   },
   webpackFinal: async (config) => {
+
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['vue-style-loader', 'css-loader', 'sass-loader'],
+      include: path.resolve(__dirname, '../'),
+    });
+
+
     config.resolve.alias = {
       ...config.resolve.alias,
       "@": path.resolve(__dirname, "../src"),
@@ -21,7 +29,9 @@ module.exports = {
       "@assets": path.resolve(__dirname, "../src/assets"),
       "@stories": path.resolve(__dirname, "../src/stories"),
     };
+
     config.resolve.extensions.push(".ts", ".tsx");
+
     return config;
   },
 }
