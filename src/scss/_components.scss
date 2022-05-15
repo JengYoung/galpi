@@ -1,0 +1,21 @@
+.container {
+  @include responsive-default {
+    padding: 0 5%;
+  }
+
+  @include responsive-small {
+    padding: 0 2rem;
+  }
+
+  @include responsive-medium {
+    padding: 0 4.375rem;
+  }
+
+  @include responsive-large {
+    padding: 0 5.5rem;
+  }
+
+  @include responsive-x-large {
+    padding: 0 7.375rem;
+  }
+}
